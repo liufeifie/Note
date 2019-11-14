@@ -713,7 +713,20 @@ git pull  拉取最新)
 ```
 
 
+#  码云
 
+报错Incorrect username or password ( access token )
+使用码云将仓库clone到本地，报错信息如下：
+
+D:\123>git clone https://gitee.com/ycyzharry/helloworld.git
+Cloning into 'helloworld'...
+remote: Incorrect username or password ( access token )
+fatal: Authentication failed for 'https://gitee.com/ycyzharry/helloworld.git/'
+
+后面继续clone时候以为会弹出登录窗口，结果直接提示用户名或密码错误。
+解决办法：
+打开电脑的控制面板–>用户账户–>凭据管理器
+找到普通凭据git:https://gitee.com这一栏，选择编辑，填入正确的用户名和密码，最后点击保存即可。
 
 
 
