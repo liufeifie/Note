@@ -7,16 +7,6 @@ git一些操作指令和介绍
 git 学习. md文件
 
 
-#### 文件说明
-
-1. base.md:  Git基础
-2. basic_operation.md: Git基本操作
-3. branch.md: Git分支介绍
-4. m与am.md: git commit -m 与 git commit -am '' 的区别介绍
-5. key.md: Git托管介绍
-6. common_commands: Git常用命令 
-
-
 # 配置
 
 一般在新的系统上，我们都需要先配置下自己的Git工作环境。配置工作只需一次，以后升级时还会沿用现在的配置。当然，如果需要，你随时可以用相同的命令修改已有的配置
@@ -65,6 +55,13 @@ $ git config --global alias.unstage 'reset HEAD --'
 ```
 $ git unstage fileA
 $ git reset HEAD fileA
+```
+
+## 【查看配置信息】
+
+当代码库远程迁移后，修改本地代码关联的远程地址
+```
+git remote set-url origin 新仓库地址
 ```
 
 ## 【查看配置信息】
