@@ -57,12 +57,6 @@ $ git unstage fileA
 $ git reset HEAD fileA
 ```
 
-## 【查看配置信息】
-
-当代码库远程迁移后，修改本地代码关联的远程地址
-```
-git remote set-url origin 新仓库地址
-```
 
 ## 【查看配置信息】
 
@@ -608,7 +602,11 @@ $ git commit -am 'wrote a file'  把所有已经跟踪过的文件暂存起来�
 ```
 
 ## 【关联】
+## 【关联仓库地址】
+
+当代码库远程迁移后，修改本地代码关联的远程地址
 ```
+    git remote set-url origin 新仓库地址
 　　$ git remote add [shortname] [url]  添加一个新的远程仓库，可指定一个名字，以便引用，一般为origin
 　　$ git remote rename pb paul  将远程库的名称从pb改为paul
 　　$ git remote rm [shortname]  取消对该远程库的关联
